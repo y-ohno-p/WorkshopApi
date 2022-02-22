@@ -30,9 +30,7 @@ namespace WorkshopApi
 		{
 			app.UseDeveloperExceptionPage();
 			app.UseSwagger();
-			app.UseSwaggerUI(c => c.SwaggerEndpoint("/api/swagger/v1/swagger.json", "WorkshopApi v1"));
-
-			app.UseHttpsRedirection();
+			app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WorkshopApi v1"));
 
 			app.UseRouting();
 
